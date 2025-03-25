@@ -13,7 +13,7 @@ DO $$
 DECLARE
     valor REAL;
 BEGIN
-    valor := RANDOM() * 9 + 1; -- Gera um valor no intervalo [1,10]
+    valor := RANDOM() * 9 + 1;
     RAISE NOTICE 'O valor real gerado é: %', valor;
 END;
 $$;
@@ -24,7 +24,7 @@ DECLARE
     celsius REAL;
     fahrenheit REAL;
 BEGIN
-    celsius := RANDOM() * 10 + 20; -- Gera um valor no intervalo [20,30]
+    celsius := RANDOM() * 10 + 20; 
     fahrenheit := (celsius * 9/5) + 32;
     RAISE NOTICE 'Temperatura: %°C = %°F', celsius, fahrenheit;
 END;
@@ -66,7 +66,7 @@ DO $$
 DECLARE
     largura REAL := RANDOM() * 9 + 1;
     comprimento REAL := RANDOM() * 9 + 1;
-    preco_m2 REAL := RANDOM() * 10 + 60; -- Gera no intervalo [60,70]
+    preco_m2 REAL := RANDOM() * 10 + 60;
     area REAL;
     valor_total REAL;
 BEGIN
